@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 section {
@@ -8,7 +10,8 @@ section {
 }
 
 .dark-section {
-    background-color: #030303;
+    background-color: #030303
+
 }
 
 .video-section {
@@ -24,12 +27,11 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 240px;
+    height: 150px;
 }
 
-body {
-    background-color: #030303;
-}
+
+
 .logo {
     width: 200px;
     height: 30px;
@@ -56,8 +58,101 @@ nav > ul > li > a {
     font-weight: 200;
     font-size: 22px;
     line-height: 26px;
+   letter-spacing: 2px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.section-title {
+    /*width:  598px;*/
+    font-family: Forum, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+   letter-spacing: 5px;
+    text-transform: uppercase;
+    color:  #9D8665;
+
+}
+.dark-title   {
+    color: #FFFFFF;
+}
+.dark-title  p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
     /* identical to box height */
     letter-spacing: 2px;
     color: #FFFFFF;
+}
+
+.welcome{
+    height: 100vh;
+    background-image: url("/assets/img/1.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) calc(100% - 10px);
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.pagination{
+    align-self: flex-end;
+    width: 600px;
+    height: 120px;
+    background-image: url("/assets/img/Slider pagination.png");
+}
+
+
+.btn_link{
+    width: 360px;
+    height: 75px;
+    background: #710707;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
     text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.left{
+    align-self: flex-start;
+}
+.underline-title {
+    position: relative;
+}
+.underline-title::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: red;
+}
+.section-light{
+    background-color: #fff;
+}
+
+.img {
+    width: 440px;
+    height: 285px;
+}
+
+.visiting-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
 }
